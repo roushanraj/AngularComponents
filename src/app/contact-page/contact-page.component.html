@@ -19,3 +19,22 @@
               <strong>Warning!</strong> Contacts may update
             </ngb-alert>
           </p>
+
+          <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Roll</th>
+                  <th>Standard</th>
+                  <th>Admission year</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let students of students">
+                <td>{{ students.name }}</td>
+                <td>{{ students.rollNo }}</td>
+                <td>{{ students.standard }}</td>
+                <td>{{ students.admYear }}</td>
+              </tr>
+            </tbody>
+          </table>
