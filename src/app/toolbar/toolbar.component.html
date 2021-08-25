@@ -1,0 +1,60 @@
+<style>
+
+:host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+      .toolbar {
+    position: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: hsl(27, 100%, 37%);
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .button {
+	color: #494949 !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #ffffff;
+	padding: 10px;
+	border: 2px solid #494949 !important;
+	display: inline-block;
+	transition: all 0.4s ease 0s;
+}
+.button:hover {
+	color: #ffffff !important;
+	background: #f6b93b;
+	border-color: #f6b93b !important;
+	transition: all 0.4s ease 0s;
+}
+</style>
+
+<div class="toolbar" role="banner">
+    <img
+      width="40"
+      alt="TekMindz"
+      src="..\favicon.ico"
+    />
+    <span>TekMindz</span>
+    <nav>
+        <a class="button" routerLink=""> Home </a>
+        <a class="button" routerLink="/contact">  Contact Us</a>
+    </nav>
+    
+      <div class="spacer"></div>
+</div>
+<router-outlet></router-outlet>
